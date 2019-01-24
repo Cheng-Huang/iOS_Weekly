@@ -14,9 +14,17 @@
         "-search",
         "-highlight",
         "-livereload",
-        "search-plus@^0.0.11"
+        "search-plus@^0.0.11",
+        "prism"
     ],
     "pluginsConfig": {
-        
+    	"prism": {
+		    "css": [
+		      "prismjs/themes/prism-darcula.css"
+		    ],
+		    "lang": {
+		      "objective-c": "objectivec"
+		    }
+		  }
     }
 }
