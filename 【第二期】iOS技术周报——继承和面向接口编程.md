@@ -14,7 +14,7 @@
 
 # 一、继承
 
-**[继承](https://zh.wikipedia.org/zh-hans/%E7%BB%A7%E6%89%BF_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6))**（英语：inheritance）是面向对象软件技术当中的一个概念。 如果一个类別B「**继承**自」另一个类別A，就把这个B称为「A的子类」，而把A称为「B的父类別」也可以称「A是B的超类」。 **继承**可以使得子类具有父类別的各种属性和方法，而不需要再次编写相同的代码。
+**\[继承\]\(**[https://zh.wikipedia.org/zh-hans/继承\_\(计算机科学](https://zh.wikipedia.org/zh-hans/继承_%28计算机科学)**\)\)**（英语：inheritance）是面向对象软件技术当中的一个概念。 如果一个类別B「**继承**自」另一个类別A，就把这个B称为「A的子类」，而把A称为「B的父类別」也可以称「A是B的超类」。 **继承**可以使得子类具有父类別的各种属性和方法，而不需要再次编写相同的代码。
 
 ## 为什么使用继承
 
@@ -24,10 +24,10 @@
 
 ## 继承的局限性
 
-> 继承从代码复用的角度来说，特别好用，也特别容易被滥用和被错用。不恰当地使用继承导致的最大的一个缺陷特征就是**高耦合**。
+> 继承从代码复用的角度来说，特别好用，也特别容易被滥用和被错用。不恰当地使用继承导致的最大的一个缺陷特征就是**高耦合**。  
 > 在这里我要补充一点，耦合是一个**特征**，虽然大部分情况是缺陷的特征，但是**当耦合成为需求的时候，耦合就不是缺陷**了。
 
-以上引用了Casa提出的观点，他在文章内用具体的例子讲述了继承的局限性，具体可移步阅读[跳出面向对象思想(一) 继承](https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-yi-ji-cheng.html)。
+以上引用了Casa提出的观点，他在文章内用具体的例子讲述了继承的局限性，具体可移步阅读[跳出面向对象思想\(一\) 继承](https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-yi-ji-cheng.html)。
 
 ## 继承的观点
 
@@ -35,10 +35,10 @@
 
 ### 适用继承的场景
 
-Chris Eidhof的文章[《subclassing》](https://link.jianshu.com?t=https://www.objc.io/issues/13-architecture/subclassing/)提到需要自定义UITableViewCell等View视图的时候我们可以使用继承来创建自定义View,这些代码放入子类更合理，不光代码得到更好的封装，也能得到一个可以在工程中重用的组件。Chris Edihof还提到model可以继承来实现了 `isEqual: `、`hash `、 `copyWithZone:` 和 `description` 等方法的类。
+Chris Eidhof的文章[《subclassing》](https://link.jianshu.com?t=https://www.objc.io/issues/13-architecture/subclassing/)提到需要自定义UITableViewCell等View视图的时候我们可以使用继承来创建自定义View,这些代码放入子类更合理，不光代码得到更好的封装，也能得到一个可以在工程中重用的组件。Chris Edihof还提到model可以继承来实现了 `isEqual:`、`hash`、 `copyWithZone:` 和 `description` 等方法的类。  
  Chris Eidhof说的只是继承的几个应用场景，他没有说使用继承的界限。
 
- Casa在[跳出面向对象思想(一) 继承](https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-yi-ji-cheng.html)中提到是否使用继承需要考虑三个点：
+Casa在[跳出面向对象思想\(一\) 继承](https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-yi-ji-cheng.html)中提到是否使用继承需要考虑三个点：
 
 1. 父类只是给子类提供服务，并不涉及子类的业务逻辑
 2. 层级关系明显，功能划分清晰，父类和子类各做各的。
@@ -90,7 +90,7 @@ Chris Eidhof也有类似的观点：`In a lot of projects that I’ve worked on,
 
 #### 组合
 
-表示两个对象之间是整体和部分的强关系，是“contains(包含) a”关系，要求两个类同生共死。生命周期完全一致，同生共死。部分的生命周期不能超越整体！
+表示两个对象之间是整体和部分的强关系，是“contains\(包含\) a”关系，要求两个类同生共死。生命周期完全一致，同生共死。部分的生命周期不能超越整体！
 
 例如：一个窗口内有按钮、标签，当窗口关闭时，窗口与按钮、标签同时销毁。
 
@@ -192,9 +192,9 @@ app上线一段时间之后，UED不知哪根筋搭错了，决定要修改搜�
 
 如果ViewController统一继承了父类控制器，首先可能会涉及到上面说到的高耦合的一个项目，缺点；除此之外，还会涉及上手接受成本问题，新手接受需要对父类控制器的使用有一定的了解；另外，如果涉及项目迁移问题，在迁移子类控制器的同时还要将父类控制器也迁移出去。最后一个理由是，即使不通过继承，同样能达到对项目控制器进行统一配置。
 
-## 面向切面(AOP)思想简介
+## 面向切面\(AOP\)思想简介
 
-上面也说了几种替代继承的方法，如果ViewController不通过继承的方式实现，那么首选的替代方式是什么？这里我们可以采用面向切面的编程思想和分类结合的方式替代控制器的继承。
+上面也说了几种替代继承的方法，如果ViewController不通过继承的方式实现，那么首选的替代方式是什么？这里我们可以采用面向切面的编程思想和分类结合的方式替代控制器的继承。  
  首先简单说下面向切面的编程思想（AOP），听起来很高大上，实际上很多iOS开发者应该都用过，在iOS中最直接的体现就是借助 Method Swizzling 实现方法替换。一般，主要的功能是日志记录，性能统计，安全控制，事务处理，异常处理等等。主要的意图是：将日志记录，性能统计，安全控制，事务处理，异常处理等代码从业务逻辑代码中划分出来，通过对这些行为的分离，我们希望可以将它们独立到非指导业务逻辑的方法中，进而改 变这些行为的时候不影响业务逻辑的代码。可以通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术。**假设把应用程序想成一个立体结构的话，OOP的利刃是纵向切入系统，把系统划分为很多个模块（如：用户模块，文章模块等等），而AOP的利刃是横向切入系统，提取各个模块可能都要重复操作的部分（如：权限检查，日志记录等等）。**
 
 ## 方案实现
@@ -237,7 +237,7 @@ app上线一段时间之后，UED不知哪根筋搭错了，决定要修改搜�
         [UIViewController aspect_hookSelector:@selector(loadView) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectInfo){
             [self loadView:[aspectInfo instance]];
         } error:NULL];
-        
+
         [UIViewController aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo, BOOL animated){
             [self viewWillAppear:animated viewController:[aspectInfo instance]];
         } error:NULL];
@@ -265,9 +265,9 @@ app上线一段时间之后，UED不知哪根筋搭错了，决定要修改搜�
 
 关于上面的代码主要说三点：
 
-> 1、借助 load 方法，实现代码无任何入性型。
->  当类被引用进项目的时候就会执行`load`函数(在main函数开始执行之前）,与这个类是否被用到无关,每个类的`load`函数只会自动调用一次。除了这个案列，在实际开发中笔者曾这么用过load方法，将app启动后的广告逻辑相关代码全部放到一个类中的load方法，实现广告模块对项目的无入侵性。`initialize`在类或者其子类的第一个方法被调用前调用。即使类文件被引用进项目,但是没有使用,initialize不会被调用。由于是系统自动调用，也不需要再调用 [super initialize] ，否则父类的initialize会被多次执行。
->  2、不单单可以替换`loadView`和`viewWillAppear`方法，还可以替换控制器其他生命周期相关方法，在这些方法中实现对控制器的统一配置。如view背景颜色、统计事件等。
+> 1、借助 load 方法，实现代码无任何入性型。  
+>  当类被引用进项目的时候就会执行`load`函数\(在main函数开始执行之前）,与这个类是否被用到无关,每个类的`load`函数只会自动调用一次。除了这个案列，在实际开发中笔者曾这么用过load方法，将app启动后的广告逻辑相关代码全部放到一个类中的load方法，实现广告模块对项目的无入侵性。`initialize`在类或者其子类的第一个方法被调用前调用。即使类文件被引用进项目,但是没有使用,initialize不会被调用。由于是系统自动调用，也不需要再调用 \[super initialize\] ，否则父类的initialize会被多次执行。  
+>  2、不单单可以替换`loadView`和`viewWillAppear`方法，还可以替换控制器其他生命周期相关方法，在这些方法中实现对控制器的统一配置。如view背景颜色、统计事件等。  
 >  3、控制器中避免不了还会拓展一些方法，如无网络数据提示图相关方法，此时可以借助`Category`实现，在无法避免使用属性的情况下，可以借助运行时添加属性。
 
 关于控制器的集成问题就先说到这，接下来看看面向接口的思想。
@@ -283,9 +283,9 @@ ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 [request startAsynchronous];
 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 [manager GET:@"www.olinone.com" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-   
+
 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-   
+
 }];
 ```
 
@@ -331,11 +331,11 @@ extension UIView {
 
 ## 多态
 
-**[多态](https://baike.baidu.com/item/多态)**（Polymorphism）按字面的意思就是“**多**种状态”。 在面向对象语言中，接口的**多**种不同的实现方式即为**多态**。对于一个引用变量，可以指向任何类的对象 （一个对外接口，多个内在实现）
+[**多态**](https://baike.baidu.com/item/多态)（Polymorphism）按字面的意思就是“**多**种状态”。 在面向对象语言中，接口的**多**种不同的实现方式即为**多态**。对于一个引用变量，可以指向任何类的对象 （一个对外接口，多个内在实现）
 
 ### 多态的四个问题
 
-引用[跳出面向对象思想(二) 多态](https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-er-duo-tai.html)中Casa对多态四种情况的描述：
+引用[跳出面向对象思想\(二\) 多态](https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-er-duo-tai.html)中Casa对多态四种情况的描述：
 
 > 一般来说我们采用多态的场景还是很多的，有些在设计的时候就是用于继承的父类，希望子类覆盖自己的某些方法，然后才能够使程序正常运行下去。比如：
 >
@@ -393,8 +393,8 @@ extension UIView {
 
 按照继承的写法，会存在以下问题：
 
-- 父类中的`analyze`会有空方法挂在那里，对于父类而言没有任何实际意义。
-- 如果架构工程师写父类，业务工程师实现子类。那么业务工程师很可能不清楚：哪些方法需要被覆盖重载，哪些不需要。如果子类没有覆重方法，而父类提供的只是空方法，就很容易出问题。如果子类在覆重的时候引入了其他不相关逻辑，那么子类对象就显得不够单纯，角色复杂了。
+* 父类中的`analyze`会有空方法挂在那里，对于父类而言没有任何实际意义。
+* 如果架构工程师写父类，业务工程师实现子类。那么业务工程师很可能不清楚：哪些方法需要被覆盖重载，哪些不需要。如果子类没有覆重方法，而父类提供的只是空方法，就很容易出问题。如果子类在覆重的时候引入了其他不相关逻辑，那么子类对象就显得不够单纯，角色复杂了。
 
 使用面向接口的方式实现代码如下：
 
@@ -444,8 +444,8 @@ extension UIView {
 
 相比较于继承的写法，面向接口的写法恰好能弥补上述三个缺陷：
 
-- 父类中将不会再用`analyze`空方法挂在那里。
-- 原本需要覆盖重载的方法，不放在父类的声明中，而是放在接口中去实现。基于此，公司内部可以规定:`不允许覆盖重载父类中的方法`、`子类需要实现接口协议中的方法`，可以避免继承上带来的困惑。子类中如果引入了父类的外部逻辑，此时通过协议的控制，原本引入了不相关的逻辑也很容易被剥离。
+* 父类中将不会再用`analyze`空方法挂在那里。
+* 原本需要覆盖重载的方法，不放在父类的声明中，而是放在接口中去实现。基于此，公司内部可以规定:`不允许覆盖重载父类中的方法`、`子类需要实现接口协议中的方法`，可以避免继承上带来的困惑。子类中如果引入了父类的外部逻辑，此时通过协议的控制，原本引入了不相关的逻辑也很容易被剥离。
 
 现在可以回答本节开始引出Casa的四个问题：
 
@@ -529,8 +529,11 @@ extension UIView {
 
 # 五、总结
 
-文章的第一部分首先说了继承的代码复用性和高耦合性，然后总结了继承应当在何时使用，最后有说了四种替代继承的方案(**协议**、**组合**、**类别**、**配置对象**)；第二部分利用面向切面的思想，解决了iOS开发中关于ViewController继承的问题；第三部分简单介绍了面向接口的思想，以及和面向对象思想的比较；第四部分涉及多态和面向接口的抉择问题。
+文章的第一部分首先说了继承的代码复用性和高耦合性，然后总结了继承应当在何时使用，最后有说了四种替代继承的方案\(**协议**、**组合**、**类别**、**配置对象**\)；第二部分利用面向切面的思想，解决了iOS开发中关于ViewController继承的问题；第三部分简单介绍了面向接口的思想，以及和面向对象思想的比较；第四部分涉及多态和面向接口的抉择问题。
 
 > 编辑：黄成
 >
 > 日期：2019.1.22
+
+
+
