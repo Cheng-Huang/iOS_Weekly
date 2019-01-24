@@ -21,6 +21,10 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-darcula.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -211,16 +215,16 @@
 <h2 id="&#x66FF;&#x4EE3;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x5F0F;">&#x66FF;&#x4EE3;&#x7EE7;&#x627F;&#x7684;&#x65B9;&#x5F0F;</h2>
 <h3 id="&#x534F;&#x8BAE;">&#x534F;&#x8BAE;</h3>
 <p>&#x5047;&#x8BBE;&#x539F;&#x672C;&#x5DF2;&#x7ECF;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;&#x7EE7;&#x627F; NSObject &#x7684;&#x97F3;&#x9891;&#x64AD;&#x653E;&#x5668; VoicePlayer &#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x60F3;&#x652F;&#x6301; OGG &#x683C;&#x5F0F;&#x7684;&#x97F3;&#x9891;&#x3002;&#x800C;&#x5B9E;&#x9645;&#x4E0A;&#x4E4B;&#x524D;&#x7684; VoicePlayer &#x548C;&#x73B0;&#x5728;&#x60F3;&#x8981;&#x5F00;&#x53D1;&#x7684;&#x97F3;&#x9891;&#x64AD;&#x653E;&#x5668;&#x7C7B;&#xFF0C;&#x53EA;&#x662F;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x7684;API&#x7C7B;&#x4F3C;&#xFF0C;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5374;&#x5DEE;&#x522B;&#x5F88;&#x5927;&#x3002;&#x8FD9;&#x91CC;&#x7B80;&#x5355;&#x8BF4;&#x660E;&#x4E00;&#x4E0B; OGG &#x683C;&#x5F0F;&#x97F3;&#x9891;&#x5728;&#x6E38;&#x620F;&#x5F00;&#x53D1;&#x4E2D;&#x7528;&#x7684;&#x6BD4;&#x8F83;&#x666E;&#x904D;&#xFF0C;&#x76F8;&#x6BD4;&#x4E8E;&#x5176;&#x4ED6;&#x97F3;&#x9891;&#x800C;&#x8A00;&#xFF0C;OGG &#x6700;&#x5927;&#x7684;&#x7279;&#x70B9;&#x662F;&#x4F53;&#x79EF;&#x66F4;&#x5C0F;&#x3002;&#x4E00;&#x6BB5;&#x97F3;&#x9891;&#x4E2D;&#xFF0C;&#x6CA1;&#x6709;&#x58F0;&#x97F3;&#x7684;&#x90A3;&#x4E00;&#x90E8;&#x5206;&#x5C06;&#x4E0D;&#x6682;&#x7528;&#x4EFB;&#x4F55;&#x4F53;&#x79EF;&#xFF0C;&#x800C;&#x7C7B;&#x4F3C; MP3 &#x683C;&#x5F0F;&#x5219;&#x4E0D;&#x540C;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x6CA1;&#x58F0;&#x97F3;&#xFF0C;&#x4F9D;&#x7136;&#x4F1A;&#x5B58;&#x5728;&#x4F53;&#x79EF;&#x5360;&#x7528;&#x3002;&#x53C2;&#x7167;&#x4E0A;&#x9762;&#x5173;&#x4E8E;&#x7EE7;&#x627F;&#x7684;&#x4F7F;&#x7528;&#x539F;&#x5219;&#x53EF;&#x77E5;&#xFF0C;&#x6B64;&#x65F6;&#x7EE7;&#x627F;&#x5E76;&#x4E0D;&#x9002;&#x5408;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x3002;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x901A;&#x8FC7;&#x534F;&#x8BAE;&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-objective-c">@protocol VoicePlayerProtocol &lt;NSObject&gt;
-- (void)play;
-- (void)pause;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">@protocol</span> VoicePlayerProtocol <span class="token operator">&lt;</span>NSObject<span class="token operator">&gt;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>play<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>pause<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-@class NormalVoicePlayer : NSObject &lt;VideoPlayerProtocol&gt;
-@end
+<span class="token keyword">@class</span> NormalVoicePlayer <span class="token punctuation">:</span> NSObject <span class="token operator">&lt;</span>VideoPlayerProtocol<span class="token operator">&gt;</span>
+<span class="token keyword">@end</span>
 
-@class OGGVoicePlayer : NSObject &lt;VideoPlayerProtocol&gt;
-@end
+<span class="token keyword">@class</span> OGGVoicePlayer <span class="token punctuation">:</span> NSObject <span class="token operator">&lt;</span>VideoPlayerProtocol<span class="token operator">&gt;</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <h3 id="&#x7EC4;&#x5408;&#x6216;&#x805A;&#x5408;">&#x7EC4;&#x5408;&#x6216;&#x805A;&#x5408;</h3>
 <p>&#x4EE5;&#x4E0B;&#x5BF9;&#x7EE7;&#x627F;&#x3001;&#x7EC4;&#x5408;&#x548C;&#x805A;&#x5408;&#x7684;&#x5B9A;&#x4E49;&#x53C2;&#x8003;&#x4E86;<a href="http://www.cnblogs.com/bossren/p/6428475.html" target="_blank">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x4E09;&#x5927;&#x7279;&#x6027;: &#x5C01;&#x88C5;&#xFF0C; &#x7EE7;&#x627F;&#xFF0C; &#x591A;&#x6001;</a></p>
@@ -260,18 +264,18 @@
 <p>&#x7EC4;&#x5408;&#x548C;&#x805A;&#x5408;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x7EC4;&#x5408;&#x662F;&#x540C;&#x751F;&#x5171;&#x6B7B;&#xFF08;&#x5173;&#x7CFB;&#x7D27;&#x5BC6;&#xFF09;&#xFF1B;&#x805A;&#x5408;&#x6CA1;&#x6709;&#x7279;&#x522B;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
 <h5 id="&#x9002;&#x7528;&#x7EC4;&#x5408;&#x6216;&#x805A;&#x5408;&#x7684;&#x60C5;&#x51B5;&#xFF1A;">&#x9002;&#x7528;&#x7EC4;&#x5408;&#x6216;&#x805A;&#x5408;&#x7684;&#x60C5;&#x51B5;&#xFF1A;</h5>
 <p>&#x5047;&#x5982;&#xFF1A;A&#x754C;&#x9762;&#x6709;&#x4E2A;&#x8F93;&#x5165;&#x6846;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x5386;&#x53F2;&#x6765;&#x81EA;&#x52A8;&#x8865;&#x5168;&#xFF0C;&#x53EB;<code>AutoCompleteTextField</code>&#x3002;&#x540E;&#x6765;&#x67D0;&#x5929;&#x6765;&#x4E86;&#x4E2A;&#x9700;&#x6C42;&#xFF0C;&#x5728;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x754C;&#x9762;&#x4E2D;&#xFF0C;&#x4E5F;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x8F93;&#x5165;&#x6846;&#xFF0C;&#x9664;&#x4E86;&#x6839;&#x636E;&#x8F93;&#x5165;&#x5386;&#x53F2;&#x8865;&#x5168;&#xFF0C;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x90AE;&#x7BB1;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5C31;&#x662F;&#x7528;&#x6237;&#x8F93;&#x5165;@&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x4E00;&#x4E9B;&#x57DF;&#x540D;&#x3002;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-objective-c">@interface AutoCompleteTextField : UITextField
-- (void)autoCompleteWithUserInfo;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">@interface</span> AutoCompleteTextField <span class="token punctuation">:</span> UITextField
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>autoCompleteWithUserInfo<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-@interface AutoCompleteMailTextField : AutoCompleteTextField
-- (void)autoCompleteWithMail;
-@end
+<span class="token keyword">@interface</span> AutoCompleteMailTextField <span class="token punctuation">:</span> AutoCompleteTextField
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>autoCompleteWithMail<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>&#x8FC7;&#x4E24;&#x5929;&#xFF0C;&#x4EA7;&#x54C1;&#x7ECF;&#x7406;&#x5E0C;&#x671B;&#x6709;&#x4E2A;&#x672C;&#x5730;&#x8F93;&#x5165;&#x6846;&#x80FD;&#x591F;&#x6839;&#x636E;&#x672C;&#x5730;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x6765;&#x8865;&#x5168;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6839;&#x636E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x81EA;&#x52A8;&#x8865;&#x5168;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x901A;&#x8FC7;&#x8986;&#x76D6;&#x6765;&#x5B9E;&#x73B0;&#xFF1A;</p>
-<pre><code class="lang-objective-c">@interface AutoCompleteLocalTextField : AutoCompleteTextField
-- (void) autoCompleteWithUserInfo;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">@interface</span> AutoCompleteLocalTextField <span class="token punctuation">:</span> AutoCompleteTextField
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> autoCompleteWithUserInfo<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>app&#x4E0A;&#x7EBF;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4E4B;&#x540E;&#xFF0C;UED&#x4E0D;&#x77E5;&#x54EA;&#x6839;&#x7B4B;&#x642D;&#x9519;&#x4E86;&#xFF0C;&#x51B3;&#x5B9A;&#x8981;&#x4FEE;&#x6539;&#x641C;&#x7D22;&#x6846;&#x7684;UI,&#x4E8E;&#x662F;&#x6DFB;&#x52A0;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;<code>initWithStyle</code>&#x5F97;&#x4EE5;&#x89E3;&#x51B3;&#x3002;</p>
 <p>&#x91CD;&#x70B9;&#x6765;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x5929;&#xFF0C;&#x9694;&#x58C1;&#x9879;&#x76EE;&#x7EC4;&#x7684;&#x54E5;&#x4EEC;&#x60F3;&#x628A;&#x6211;&#x4EEC;&#x7684;&#x672C;&#x5730;&#x8865;&#x5168;&#x8F93;&#x5165;&#x6846;<code>AutoCompleteLocalTextField</code>&#x79FB;&#x690D;&#x5230;&#x4ED6;&#x4EEC;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x3002;&#x8FD9;&#x4E2A;&#x53EF;&#x5C31;&#x9EBB;&#x70E6;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x4F7F;&#x7528;<code>AutoCompleteLocalTextField</code>&#x8981;&#x5F15;&#x5165;<code>AutoCompleteTextField</code>&#xFF0C;&#x800C;<code>AutoCompleteTextField</code>&#x672C;&#x8EAB;&#x4E5F;&#x5E26;&#x7740;API&#x76F8;&#x5173;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x6709;&#x6570;&#x636E;&#x89E3;&#x6790;&#x7684;&#x5BF9;&#x8C61;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8981;&#x60F3;&#x7ED9;&#x53E6;&#x5916;&#x4E00;&#x4E2A;TEAM&#xFF0C;&#x5DEE;&#x4E0D;&#x591A;&#x6574;&#x4E2A;&#x7F51;&#x7EDC;&#x5C42;&#x6846;&#x67B6;&#x90FD;&#x8981;&#x79FB;&#x690D;&#x8FC7;&#x53BB;&#x3002;</p>
@@ -281,9 +285,9 @@
 <p>&#x5982;&#x679C;&#x60F3;&#x91CD;&#x7528;&#x5DF2;&#x6709;&#x7684;&#x4EE3;&#x7801;&#x800C;&#x4E0D;&#x60F3;&#x5171;&#x4EAB;&#x540C;&#x6837;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x7EC4;&#x5408;&#x6216;&#x805A;&#x5408;&#x4FBF;&#x662F;&#x9996;&#x9009;&#x3002;</p>
 <h3 id="&#x7C7B;&#x522B;">&#x7C7B;&#x522B;</h3>
 <p>&#x6709;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x60F3;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x589E;&#x52A0;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#x5F62;&#x6210;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7EE7;&#x627F;&#x662F;&#x4E00;&#x79CD;&#x5F88;&#x5BB9;&#x6613;&#x60F3;&#x5230;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x65B9;&#x6848;&#x662F;&#x901A;&#x8FC7;&#x7C7B;&#x522B;&#x3002;&#x4E3A;&#x8BE5;&#x5BF9;&#x8C61;&#x6269;&#x5C55;&#x65B9;&#x6CD5;&#xFF0C;&#x6309;&#x9700;&#x8C03;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x4E3A;NSArray&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x79FB;&#x9664;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
-<pre><code class="lang-objective-c">@interface NSArray (OBJExtras)
-- (void)removingFirstObject;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">@interface</span> NSArray <span class="token punctuation">(</span>OBJExtras<span class="token punctuation">)</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>removingFirstObject<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>&#x53E6;&#x5916;&#xFF0C;&#x7C7B;&#x4F3C;&#x65E0;&#x7F51;&#x7EDC;&#x6216;&#x6570;&#x636E;&#x7684;&#x63D0;&#x793A;&#x89C6;&#x56FE;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x501F;&#x52A9;Category&#x5B9E;&#x73B0;&#xFF0C;&#x5728;&#x65E0;&#x6CD5;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5C5E;&#x6027;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x8FD0;&#x884C;&#x65F6;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x3002;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x540C;&#x63A7;&#x5236;&#x5668;&#x89E3;&#x8026;&#x3002;</p>
 <h3 id="&#x914D;&#x7F6E;&#x5BF9;&#x8C61;">&#x914D;&#x7F6E;&#x5BF9;&#x8C61;</h3>
@@ -297,63 +301,63 @@
 <h2 id="&#x65B9;&#x6848;&#x5B9E;&#x73B0;">&#x65B9;&#x6848;&#x5B9E;&#x73B0;</h2>
 <p>&#x9762;&#x5411;&#x5207;&#x9762;&#x7684;&#x601D;&#x60F3;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x7684;&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#xFF0C;iOS &#x4E2D;&#x7684;<code>Method Swizzling</code>&#x66FF;&#x6362;&#x7CFB;&#x7EDF;&#x65B9;&#x6CD5;&#x53EF;&#x8FBE;&#x5230;&#x540C;&#x6837;&#x7684;&#x6548;&#x679C;&#x3002;&#x8FD9;&#x91CC;&#x66F4;&#x4E3A;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5F00;&#x6E90;&#x5E93;<a href="https://github.com/steipete/Aspects" target="_blank">Aspects</a>&#x53BB;&#x62E6;&#x622A;&#x7CFB;&#x7EDF;&#x65B9;&#x6CD5;&#x3002;</p>
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53EB;&#x505A;ViewControllerConfigure&#x7684;&#x7C7B;&#xFF0C;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x3002;</p>
-<pre><code class="lang-objective-c">//.h&#x6587;&#x4EF6;
-@interface ViewControllerConfigure : NSObject
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//.h&#x6587;&#x4EF6;</span>
+<span class="token keyword">@interface</span> ViewControllerConfigure <span class="token punctuation">:</span> NSObject
+<span class="token keyword">@end</span>
 
-//.m&#x6587;&#x4EF6;
-#import &quot;ViewControllerConfigure.h&quot;
-#import &lt;Aspects/Aspects.h&gt;
-#import &lt;UIKit/UIKit.h&gt;
-@implementation ViewControllerConfigure
-+ (void)load
-{
-    [super load];
-    [ViewControllerConfigure sharedInstance];
-}
+<span class="token comment">//.m&#x6587;&#x4EF6;</span>
+<span class="token macro property">#<span class="token directive keyword">import</span> &quot;ViewControllerConfigure.h&quot;</span>
+<span class="token macro property">#<span class="token directive keyword">import</span> &lt;Aspects/Aspects.h&gt;</span>
+<span class="token macro property">#<span class="token directive keyword">import</span> &lt;UIKit/UIKit.h&gt;</span>
+<span class="token keyword">@implementation</span> ViewControllerConfigure
+<span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>load
+<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">super</span> load<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span>ViewControllerConfigure sharedInstance<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-+ (instancetype)sharedInstance
-{
-    static dispatch_once_t onceToken;
-    static ViewControllerConfigure *sharedInstance;
-    dispatch_once(&amp;onceToken, ^{
-        sharedInstance = [[ViewControllerConfigure alloc] init];
-    });
-    return sharedInstance;
-}
+<span class="token operator">+</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>sharedInstance
+<span class="token punctuation">{</span>
+    <span class="token keyword">static</span> dispatch_once_t onceToken<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> ViewControllerConfigure <span class="token operator">*</span>sharedInstance<span class="token punctuation">;</span>
+    <span class="token function">dispatch_once</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>onceToken<span class="token punctuation">,</span> <span class="token operator">^</span><span class="token punctuation">{</span>
+        sharedInstance <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>ViewControllerConfigure alloc<span class="token punctuation">]</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> sharedInstance<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        /* &#x5728;&#x8FD9;&#x91CC;&#x505A;&#x597D;&#x65B9;&#x6CD5;&#x62E6;&#x622A; */
-        [UIViewController aspect_hookSelector:@selector(loadView) withOptions:AspectPositionAfter usingBlock:^(id&lt;AspectInfo&gt;aspectInfo){
-            [self loadView:[aspectInfo instance]];
-        } error:NULL];
+<span class="token operator">-</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>init
+<span class="token punctuation">{</span>
+    <span class="token keyword">self</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">super</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* &#x5728;&#x8FD9;&#x91CC;&#x505A;&#x597D;&#x65B9;&#x6CD5;&#x62E6;&#x622A; */</span>
+        <span class="token punctuation">[</span>UIViewController aspect_hookSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>loadView<span class="token punctuation">)</span> withOptions<span class="token punctuation">:</span>AspectPositionAfter usingBlock<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>AspectInfo<span class="token operator">&gt;</span>aspectInfo<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token punctuation">[</span><span class="token keyword">self</span> loadView<span class="token punctuation">:</span><span class="token punctuation">[</span>aspectInfo instance<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> error<span class="token punctuation">:</span><span class="token constant">NULL</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-        [UIViewController aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionAfter usingBlock:^(id&lt;AspectInfo&gt; aspectInfo, BOOL animated){
-            [self viewWillAppear:animated viewController:[aspectInfo instance]];
-        } error:NULL];
-    }
-    return self;
-}
+        <span class="token punctuation">[</span>UIViewController aspect_hookSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>viewWillAppear<span class="token punctuation">:</span><span class="token punctuation">)</span> withOptions<span class="token punctuation">:</span>AspectPositionAfter usingBlock<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>id<span class="token operator">&lt;</span>AspectInfo<span class="token operator">&gt;</span> aspectInfo<span class="token punctuation">,</span> BOOL animated<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token punctuation">[</span><span class="token keyword">self</span> viewWillAppear<span class="token punctuation">:</span>animated viewController<span class="token punctuation">:</span><span class="token punctuation">[</span>aspectInfo instance<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> error<span class="token punctuation">:</span><span class="token constant">NULL</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-/*
+<span class="token comment">/*
    &#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E2D;&#x5C31;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x81EA;&#x52A8;&#x62E6;&#x622A;&#x4E86;&#x3002;
     &#x6240;&#x4EE5;&#x5728;&#x4F60;&#x539F;&#x6765;&#x7684;&#x67B6;&#x6784;&#x4E2D;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x5C01;&#x88C5;UIViewController&#x7684;&#x57FA;&#x7C7B;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x4EC0;&#x4E48;&#x57FA;&#x7C7B;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x8BA9;&#x8FD9;&#x4E9B;&#x57FA;&#x7C7B;&#x6D88;&#x5931;&#x3002;
- */
-#pragma mark - fake methods
-- (void)loadView:(UIViewController *)viewController
-{
-    NSLog(@&quot; loadView&quot;);
-}
+ */</span>
+<span class="token macro property">#<span class="token directive keyword">pragma</span> mark - fake methods</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>loadView<span class="token punctuation">:</span><span class="token punctuation">(</span>UIViewController <span class="token operator">*</span><span class="token punctuation">)</span>viewController
+<span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot; loadView&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-- (void)viewWillAppear:(BOOL)animated viewController:(UIViewController *)viewController
-{
-    /* &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6253;&#x65E5;&#x5FD7;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x57FA;&#x7840;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9; */
-    NSLog(@&quot;viewWillAppear&quot;);
-}
-@end
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>viewWillAppear<span class="token punctuation">:</span><span class="token punctuation">(</span>BOOL<span class="token punctuation">)</span>animated viewController<span class="token punctuation">:</span><span class="token punctuation">(</span>UIViewController <span class="token operator">*</span><span class="token punctuation">)</span>viewController
+<span class="token punctuation">{</span>
+    <span class="token comment">/* &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6253;&#x65E5;&#x5FD7;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x57FA;&#x7840;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9; */</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;viewWillAppear&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>&#x5173;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E3B;&#x8981;&#x8BF4;&#x4E09;&#x70B9;&#xFF1A;</p>
 <blockquote>
@@ -362,43 +366,43 @@
 <p>&#x5173;&#x4E8E;&#x63A7;&#x5236;&#x5668;&#x7684;&#x96C6;&#x6210;&#x95EE;&#x9898;&#x5C31;&#x5148;&#x8BF4;&#x5230;&#x8FD9;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x770B;&#x770B;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x601D;&#x60F3;&#x3002;</p>
 <h1 id="&#x4E09;&#x3001;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x601D;&#x60F3;">&#x4E09;&#x3001;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x601D;&#x60F3;</h1>
 <p>&#x5BF9;&#x4E8E;&#x63A5;&#x53E3;&#x8FD9;&#x4E00;&#x6982;&#x5FF5;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x4E0D;&#x540C;&#x8BED;&#x8A00;&#x7684;&#x5B9E;&#x73B0;&#x5F62;&#x5F0F;&#x4E0D;&#x540C;&#x3002;Java&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x4E0D;&#x652F;&#x6301;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF0C;&#x56E0;&#x6B64;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;Interface&#x5173;&#x952E;&#x8BCD;&#x3002;&#x800C;&#x5728;C++&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x7684;&#x3002;Objective-C&#x65E2;&#x4E0D;&#x652F;&#x6301;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x4F7F;&#x7528;Interface&#x5173;&#x952E;&#x8BCD;&#x4F5C;&#x4E3A;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#xFF08;Interface&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x58F0;&#x660E;&#x6765;&#x4F7F;&#x7528;&#xFF09;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#x548C;&#x534F;&#x8BAE;&#xFF08;protocol&#xFF09;&#x6765;&#x5171;&#x540C;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x3002;OC&#x4E2D;&#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;Protocol&#xFF0C;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7F16;&#x7A0B;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x9762;&#x5411;&#x534F;&#x8BAE;&#x7F16;&#x7A0B;&#x3002;&#x5148;&#x770B;&#x5982;&#x4E0B;&#x4E24;&#x7AEF;&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-objective-c">ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-[request setDidFinishSelector:@selector(requestDone:)];
-[request setDidFailSelector:@selector(requestWrong:)];
-[request startAsynchronous];
-AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-[manager GET:@&quot;www.olinone.com&quot; parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+<pre class="language-"><code class="lang-objective-c">ASIHTTPRequest <span class="token operator">*</span>request <span class="token operator">=</span> <span class="token punctuation">[</span>ASIHTTPRequest requestWithURL<span class="token punctuation">:</span>url<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span>request setDidFinishSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>requestDone<span class="token punctuation">:</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span>request setDidFailSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>requestWrong<span class="token punctuation">:</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span>request startAsynchronous<span class="token punctuation">]</span><span class="token punctuation">;</span>
+AFHTTPRequestOperationManager <span class="token operator">*</span>manager <span class="token operator">=</span> <span class="token punctuation">[</span>AFHTTPRequestOperationManager manager<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span>manager GET<span class="token punctuation">:</span><span class="token string">@&quot;www.olinone.com&quot;</span> parameters<span class="token punctuation">:</span>nil success<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>AFHTTPRequestOperation <span class="token operator">*</span>operation<span class="token punctuation">,</span> id responseObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+<span class="token punctuation">}</span> failure<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>AFHTTPRequestOperation <span class="token operator">*</span>operation<span class="token punctuation">,</span> NSError <span class="token operator">*</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-}];
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x89C2;&#x5BDF;&#x4E0A;&#x8FF0;&#x4E24;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x662F;&#x5426;&#x53D1;&#x73B0;&#x7B2C;&#x4E8C;&#x6BB5;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x4EE3;&#x7801;&#x76F8;&#x6BD4;&#x7B2C;&#x4E00;&#x6BB5;&#x66F4;&#x5BB9;&#x6613;&#x4F7F;&#x7528;&#x3002;&#x56E0;&#x4E3A;&#x7B2C;&#x4E8C;&#x6BB5;&#x4EE3;&#x7801;&#x53EA;&#x9700;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x4F20;&#x53C2;&#x5373;&#x53EF;&#xFF0C;&#x800C;&#x7B2C;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x8981;&#x5148;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x4E00;&#x5806;&#x5C5E;&#x6027;&#xFF0C;&#x6700;&#x7EC8;&#x624D;&#x80FD;&#x53D1;&#x8D77;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x8BA9;&#x4E00;&#x4E2A;&#x65B0;&#x624B;&#x4E0A;&#x624B;&#xFF0C;&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#x66F4;&#x559C;&#x6B22;&#x91C7;&#x7528;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x65E0;&#x9700;&#x5BF9;AFN&#x638C;&#x63E1;&#x592A;&#x591A;&#xFF0C;&#x4EC5;&#x8BB0;&#x4F4F;&#x8FD9;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x4FBF;&#x53EF;&#x53D1;&#x8D77;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x800C;&#x53CD;&#x89C2; ASI &#x8981;&#x5148;&#x4E86;&#x89E3;&#x5E76;&#x8BBE;&#x7F6E;&#x5404;&#x79CD;&#x5C5E;&#x6027;&#x53C2;&#x6570;&#xFF0C;&#x6700;&#x7EC8;&#x624D;&#x80FD;&#x53D1;&#x8D77;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x4E24;&#x7AEF;&#x4EE3;&#x7801;&#x5E76;&#x4E0D;&#x662F;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;ASI&#x548C;AFN&#x719F;&#x597D;&#x719F;&#x52A3;&#xFF0C;&#x53EA;&#x662F;&#x60F3;&#x501F;&#x6B64;&#x5F15;&#x51FA;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x601D;&#x60F3;&#x3002;</p>
 <p>&#x6240;&#x4EE5;&#xFF0C;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x8C03;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x805A;&#x7126;&#x4E8E;&#x5176;&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#x548C;&#x529F;&#x80FD;&#x4E0A;&#x3002;&#x7A0B;&#x5E8F;&#x733F;&#x5728;&#x9996;&#x6B21;&#x63A5;&#x89E6;&#x964C;&#x751F;&#x7684;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x63A5;&#x53E3;&#x5F80;&#x5F80;&#x6BD4;&#x5C5E;&#x6027;&#x66F4;&#x52A0;&#x76F4;&#x89C2;&#x660E;&#x4E86;&#xFF0C;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#x5F80;&#x5F80;&#x6BD4;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x66F4;&#x80FD;&#x63CF;&#x8FF0;&#x60F3;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
 <p>&#x76F8;&#x6BD4;&#x4E8E;OC&#xFF0C;Swift &#x53EF;&#x4EE5;&#x505A;&#x5230;&#x534F;&#x8BAE;&#x65B9;&#x6CD5;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF0C;&#x800C; OC &#x5219;&#x4E0D;&#x884C;&#x3002;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x548C;&#x9762;&#x5411;&#x534F;&#x8BAE;&#x7F16;&#x7A0B;&#x6700;&#x660E;&#x663E;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8FC7;&#x7A0B;&#x4E2D;&#x5BF9;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x62BD;&#x53D6;&#xFF08;&#x62BD;&#x8C61;&#xFF09;&#x4E0A;&#xFF0C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x4F7F;&#x7528;&#x7C7B;&#x548C;&#x7EE7;&#x627F;&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF1B;&#x800C;&#x9762;&#x5411;&#x534F;&#x8BAE;&#x7F16;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x9075;&#x5B88;&#x534F;&#x8BAE;&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x503C;&#x7C7B;&#x578B;&#xFF08;Swift&#x4E2D;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x6216;&#x679A;&#x4E3E;&#xFF09;&#x3002;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;swift&#x7248;&#x9762;&#x5411;&#x534F;&#x8BAE;&#x8303;&#x4F8B;&#xFF0C;&#x52A0;&#x5165;&#x60F3;&#x4E3A;&#x82E5;&#x5E72;&#x4E2A;&#x7EE7;&#x627F;&#x81EA;UIView&#x7684;&#x63A7;&#x4EF6;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x6296;&#x52A8;&#x52A8;&#x753B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF1A;</p>
-<pre><code class="lang-swift">//  Shakeable.swift
-import UIKit
-protocol Shakeable { }
-extension Shakeable where Self: UIView {
-    func shake() {
-        // implementation code
-    }
-}
+<pre class="language-"><code class="lang-swift"><span class="token comment">//  Shakeable.swift</span>
+<span class="token keyword">import</span> <span class="token builtin">UIKit</span>
+<span class="token keyword">protocol</span> <span class="token builtin">Shakeable</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token keyword">extension</span> <span class="token builtin">Shakeable</span> <span class="token keyword">where</span> <span class="token keyword">Self</span><span class="token punctuation">:</span> <span class="token builtin">UIView</span> <span class="token punctuation">{</span>
+    <span class="token keyword">func</span> <span class="token function">shake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// implementation code</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>&#x5982;&#x679C;&#x60F3;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;shake&#x52A8;&#x753B;&#xFF0C;&#x76F8;&#x5173;&#x63A7;&#x4EF6;&#x53EA;&#x8981;&#x9075;&#x5B88;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
-<pre><code class="lang-swift">class CustomImageView: UIImageView, Shakeable {
+<pre class="language-"><code class="lang-swift"><span class="token keyword">class</span> <span class="token class-name">CustomImageView</span><span class="token punctuation">:</span> <span class="token builtin">UIImageView</span><span class="token punctuation">,</span> <span class="token builtin">Shakeable</span> <span class="token punctuation">{</span>
 
-}
-class CustomButton: UIButton, Shakeable {
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">CustomButton</span><span class="token punctuation">:</span> <span class="token builtin">UIButton</span><span class="token punctuation">,</span> <span class="token builtin">Shakeable</span> <span class="token punctuation">{</span>
 
-}
+<span class="token punctuation">}</span>
 </code></pre>
 <p>&#x53EF;&#x80FD;&#x6709;&#x7684;&#x4EBA;&#x5C31;&#x4F1A;&#x95EE;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x901A;&#x8FC7; <code>extension</code>&#x5B9E;&#x73B0;&#x4E0D;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6848;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;<code>extension</code>&#x65B9;&#x5F0F;&#x5BF9;&#x4E8E; <code>CustomImageView</code> &#x548C; <code>CustomButton</code>&#xFF0C;&#x6839;&#x672C;&#x770B;&#x4E0D;&#x51FA;&#x6765;&#x4EFB;&#x4F55;&#x6296;&#x52A8;&#x7684;&#x610F;&#x56FE;&#xFF0C;&#x6574;&#x4E2A;&#x7C7B;&#x91CC;&#x9762;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x80FD;&#x544A;&#x8BC9;&#x4F60;&#x5B83;&#x9700;&#x8981;&#x6296;&#x52A8;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x901A;&#x8FC7;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x5F88;&#x76F4;&#x767D;&#x7684;&#x770B;&#x51FA;&#x6296;&#x52A8;&#x7684;&#x610F;&#x56FE;&#x3002;&#x8FD9;&#x4EC5;&#x4EC5;&#x662F;&#x9762;&#x5411;&#x534F;&#x8BAE;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x5C0F;&#x597D;&#x5904;&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#x5728;Swift&#x4E2D;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5DE7;&#x5999;&#x7684;&#x7528;&#x6CD5;&#x3002;</p>
-<pre><code class="lang-swift">import UIKit
-extension UIView {
-    func shake() {
-    }
-}
+<pre class="language-"><code class="lang-swift"><span class="token keyword">import</span> <span class="token builtin">UIKit</span>
+<span class="token keyword">extension</span> <span class="token builtin">UIView</span> <span class="token punctuation">{</span>
+    <span class="token keyword">func</span> <span class="token function">shake</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h1 id="&#x56DB;&#x3001;&#x591A;&#x6001;&#x548C;&#x9762;&#x5411;&#x63A5;&#x53E3;">&#x56DB;&#x3001;&#x591A;&#x6001;&#x548C;&#x9762;&#x5411;&#x63A5;&#x53E3;</h1>
 <h2 id="&#x591A;&#x6001;">&#x591A;&#x6001;</h2>
@@ -407,7 +411,7 @@ extension UIView {
 <p>&#x5F15;&#x7528;<a href="https://casatwy.com/tiao-chu-mian-xiang-dui-xiang-si-xiang-er-duo-tai.html" target="_blank">&#x8DF3;&#x51FA;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x601D;&#x60F3;(&#x4E8C;) &#x591A;&#x6001;</a>&#x4E2D;Casa&#x5BF9;&#x591A;&#x6001;&#x56DB;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x63CF;&#x8FF0;&#xFF1A;</p>
 <blockquote>
 <p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x591A;&#x6001;&#x7684;&#x573A;&#x666F;&#x8FD8;&#x662F;&#x5F88;&#x591A;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x5728;&#x8BBE;&#x8BA1;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x662F;&#x7528;&#x4E8E;&#x7EE7;&#x627F;&#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x5E0C;&#x671B;&#x5B50;&#x7C7B;&#x8986;&#x76D6;&#x81EA;&#x5DF1;&#x7684;&#x67D0;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x80FD;&#x591F;&#x4F7F;&#x7A0B;&#x5E8F;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x4E0B;&#x53BB;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
-<pre><code>BaseController&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#x76D6;loadView&#x7B49;&#x65B9;&#x6CD5;&#x6765;&#x6267;&#x884C;view&#x7684;&#x663E;&#x793A;&#x903B;&#x8F91;
+<pre class="language-"><code>BaseController&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#x76D6;loadView&#x7B49;&#x65B9;&#x6CD5;&#x6765;&#x6267;&#x884C;view&#x7684;&#x663E;&#x793A;&#x903B;&#x8F91;
 BaseApiManager&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#x76D6;methodName&#x7B49;&#x65B9;&#x6CD5;&#x6765;&#x6267;&#x884C;&#x5177;&#x4F53;&#x7684;API&#x8BF7;&#x6C42;
 </code></pre><p>&#x4EE5;&#x4E0A;&#x662F;&#x6211;&#x5217;&#x4E3E;&#x7684;&#x5E94;&#x7528;&#x591A;&#x6001;&#x7684;&#x51E0;&#x4E2A;&#x573A;&#x666F;&#xFF0C;&#x5728;&#x57FA;&#x4E8E;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x4EE5;&#x53CA;&#x7AD9;&#x5728;&#x4EE3;&#x7801;&#x89C2;&#x611F;&#x7684;&#x7ACB;&#x573A;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5B9E;&#x9645;&#x91C7;&#x7528;&#x591A;&#x6001;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6709;&#x4E0B;&#x9762;&#x56DB;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
 <ol>
@@ -419,36 +423,36 @@ BaseApiManager&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#
 </blockquote>
 <h2 id="&#x591A;&#x6001;&#x548C;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x5BF9;&#x6BD4;">&#x591A;&#x6001;&#x548C;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x5BF9;&#x6BD4;</h2>
 <p>&#x4EE5;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x7C7B;&#x4E3A;&#x4F8B;&#xFF0C;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x548C;&#x89E3;&#x6790;&#x6587;&#x4EF6;&#x3002;&#x5047;&#x5982;&#x5B9E;&#x9645;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x683C;&#x5F0F;&#x5341;&#x5206;&#x7279;&#x6B8A;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x7528;&#x5230;&#x7684;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x65B9;&#x5F0F;&#x548C;&#x89E3;&#x6790;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#x4E8E;&#x5E38;&#x89C4;&#x65B9;&#x5F0F;&#x3002;&#x901A;&#x5E38;&#x6309;&#x7167;&#x7EE7;&#x627F;&#x7684;&#x5199;&#x6CD5;&#x53EF;&#x80FD;&#x4F1A;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
-<pre><code class="lang-objective-c">//.h&#x6587;&#x4EF6;
-@interface FileParseTool : NSObject
-- (void)parse;
-- (void)analyze;
-@end
-//.m&#x6587;&#x4EF6;
-@implementation FileParseTool
-- (void)parse {
-    [self readFile];
-    [self analyze];
-}
-- (void)readFile {
-    //&#x5B9E;&#x73B0;&#x4EE3;&#x7801;
-    ....
-}
-- (void)analyze {
-    //&#x5B50;&#x7C7B;&#x8981;&#x91CD;&#x5199;&#x8BE5;&#x65B9;&#x6CD5;
-}
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//.h&#x6587;&#x4EF6;</span>
+<span class="token keyword">@interface</span> FileParseTool <span class="token punctuation">:</span> NSObject
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>parse<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
+<span class="token comment">//.m&#x6587;&#x4EF6;</span>
+<span class="token keyword">@implementation</span> FileParseTool
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>parse <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span> readFile<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span> analyze<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>readFile <span class="token punctuation">{</span>
+    <span class="token comment">//&#x5B9E;&#x73B0;&#x4EE3;&#x7801;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze <span class="token punctuation">{</span>
+    <span class="token comment">//&#x5B50;&#x7C7B;&#x8981;&#x91CD;&#x5199;&#x8BE5;&#x65B9;&#x6CD5;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>&#x5982;&#x679C;&#x60F3;&#x5B9E;&#x73B0;&#x5BF9;&#x7279;&#x6B8A;&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x7684;&#x89E3;&#x6790;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x7684;<code>analyze</code>&#x65B9;&#x6CD5;&#x3002;</p>
-<pre><code class="lang-objective-c">@interface SpecialFileParseTool: FileParseTool
+<pre class="language-"><code class="lang-objective-c"><span class="token keyword">@interface</span> SpecialFileParseTool<span class="token punctuation">:</span> FileParseTool
 
-@end
+<span class="token keyword">@end</span>
 
-@implementation SpecialFileParseToll
-- (void)analyze {
-    NSLog(@&quot;%@:%s&quot;, NSStringFromClass([self class]), __FUNCTION__);
-}
-@end
+<span class="token keyword">@implementation</span> SpecialFileParseToll
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;%@:%s&quot;</span><span class="token punctuation">,</span> <span class="token function">NSStringFromClass</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">self</span> class<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> __FUNCTION__<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>&#x6309;&#x7167;&#x7EE7;&#x627F;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x4F1A;&#x5B58;&#x5728;&#x4EE5;&#x4E0B;&#x95EE;&#x9898;&#xFF1A;</p>
 <ul>
@@ -456,45 +460,45 @@ BaseApiManager&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#
 <li>&#x5982;&#x679C;&#x67B6;&#x6784;&#x5DE5;&#x7A0B;&#x5E08;&#x5199;&#x7236;&#x7C7B;&#xFF0C;&#x4E1A;&#x52A1;&#x5DE5;&#x7A0B;&#x5E08;&#x5B9E;&#x73B0;&#x5B50;&#x7C7B;&#x3002;&#x90A3;&#x4E48;&#x4E1A;&#x52A1;&#x5DE5;&#x7A0B;&#x5E08;&#x5F88;&#x53EF;&#x80FD;&#x4E0D;&#x6E05;&#x695A;&#xFF1A;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x88AB;&#x8986;&#x76D6;&#x91CD;&#x8F7D;&#xFF0C;&#x54EA;&#x4E9B;&#x4E0D;&#x9700;&#x8981;&#x3002;&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x6CA1;&#x6709;&#x8986;&#x91CD;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x7236;&#x7C7B;&#x63D0;&#x4F9B;&#x7684;&#x53EA;&#x662F;&#x7A7A;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x5F88;&#x5BB9;&#x6613;&#x51FA;&#x95EE;&#x9898;&#x3002;&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x5728;&#x8986;&#x91CD;&#x7684;&#x65F6;&#x5019;&#x5F15;&#x5165;&#x4E86;&#x5176;&#x4ED6;&#x4E0D;&#x76F8;&#x5173;&#x903B;&#x8F91;&#xFF0C;&#x90A3;&#x4E48;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x5C31;&#x663E;&#x5F97;&#x4E0D;&#x591F;&#x5355;&#x7EAF;&#xFF0C;&#x89D2;&#x8272;&#x590D;&#x6742;&#x4E86;&#x3002;</li>
 </ul>
 <p>&#x4F7F;&#x7528;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-objective-c">//&#x7236;&#x7C7B;.h&#x6587;&#x4EF6;
-@protocol FileParseProtocol &lt;NSObject&gt;
-- (void)readFile;
-- (void)analyze;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//&#x7236;&#x7C7B;.h&#x6587;&#x4EF6;</span>
+<span class="token keyword">@protocol</span> FileParseProtocol <span class="token operator">&lt;</span>NSObject<span class="token operator">&gt;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>readFile<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-@interface FileParseTool : NSObject
-@property (nonatomic, weak) id&lt;FileParseProtocol&gt; assistant;
-- (void)parse;
-@end
+<span class="token keyword">@interface</span> FileParseTool <span class="token punctuation">:</span> NSObject
+<span class="token keyword">@property</span> <span class="token punctuation">(</span>nonatomic<span class="token punctuation">,</span> weak<span class="token punctuation">)</span> id<span class="token operator">&lt;</span>FileParseProtocol<span class="token operator">&gt;</span> assistant<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>parse<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-//  FileParseToolt.m
-@implementation FileParseTool
-- (void)parse {
-    [self.assistant readFile];
-    [self.assistant analyze];
-}
-@end
+<span class="token comment">//  FileParseToolt.m</span>
+<span class="token keyword">@implementation</span> FileParseTool
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>parse <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>assistant readFile<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>assistant analyze<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
-<pre><code class="lang-objective-c">//  SpecialFileParseTool.h
-@interface SpecialFileParseTool: FileParseTool &lt;FileParseProtocol&gt;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//  SpecialFileParseTool.h</span>
+<span class="token keyword">@interface</span> SpecialFileParseTool<span class="token punctuation">:</span> FileParseTool <span class="token operator">&lt;</span>FileParseProtocol<span class="token operator">&gt;</span>
+<span class="token keyword">@end</span>
 
-//SpecialFileParseTool.m
-@implementation SpecialFileParseTool
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.assistant = self;
-    }
-    return self;
-}
-- (void)analyze {
-    NSLog(@&quot;analyze special  file&quot;);
-}
-- (void)readFile {
-    NSLog(@&quot;read special file&quot;);
-}
-@end
+<span class="token comment">//SpecialFileParseTool.m</span>
+<span class="token keyword">@implementation</span> SpecialFileParseTool
+<span class="token operator">-</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>init <span class="token punctuation">{</span>
+    <span class="token keyword">self</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">super</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>assistant <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;analyze special  file&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>readFile <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;read special file&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <p>&#x76F8;&#x6BD4;&#x8F83;&#x4E8E;&#x7EE7;&#x627F;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7684;&#x5199;&#x6CD5;&#x6070;&#x597D;&#x80FD;&#x5F25;&#x8865;&#x4E0A;&#x8FF0;&#x4E09;&#x4E2A;&#x7F3A;&#x9677;&#xFF1A;</p>
 <ul>
@@ -514,60 +518,60 @@ BaseApiManager&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#
 <p>&#x5173;&#x4E8E;&#x7B2C;&#x4E8C;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x65B9;&#x6848;&#x4E2D;&#x7236;&#x7C7B;<code>FileParseTool</code>&#x7684;<code>.m</code>&#x6587;&#x4EF6;&#x4E2D;&#x4E0D;&#x518D;&#x5B58;&#x5728;&#x7A7A;&#x7684;<code>analyze</code>&#x65B9;&#x6CD5;&#x3002;</p>
 <p>&#x5173;&#x4E8E;&#x7B2C;&#x4E09;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x663E;&#x7136;&#x80FD;&#x5728;&#x89E3;&#x7B54;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x4E2D;&#x627E;&#x5230;&#x7B54;&#x6848;&#x3002;</p>
 <p>&#x5173;&#x4E8E;&#x7B2C;&#x56DB;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x518D;&#x8865;&#x5145;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x4E3B;&#x8981;&#x601D;&#x8DEF;&#x662F;&#xFF1A;&#x901A;&#x8FC7;&#x5728;&#x63A5;&#x53E3;&#x4E2D;&#x8BBE;&#x7F6E;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x662F;&#x5FC5;&#x987B;&#x8981;&#x5B9E;&#x73B0;&#xFF0C;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x662F;&#x53EF;&#x9009;&#x5B9E;&#x73B0;&#x7684;&#x6765;&#x5904;&#x7406;&#x5BF9;&#x5E94;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7531;&#x5B50;&#x7C7B;&#x6839;&#x636E;&#x5177;&#x4F53;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8986;&#x91CD;&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-objective-c">//&#x7236;&#x7C7B;.h&#x6587;&#x4EF6;
-//&#x6D41;&#x7A0B;&#x7BA1;&#x7406;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5B50;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;
-@protocol FileParseProtocol &lt;NSObject&gt;
-- (void)readFile;
-- (void)analyze;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//&#x7236;&#x7C7B;.h&#x6587;&#x4EF6;</span>
+<span class="token comment">//&#x6D41;&#x7A0B;&#x7BA1;&#x7406;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5B50;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;</span>
+<span class="token keyword">@protocol</span> FileParseProtocol <span class="token operator">&lt;</span>NSObject<span class="token operator">&gt;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>readFile<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-//&#x62E6;&#x622A;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x53EF;&#x9009;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B9E;&#x73B0;&#x60C5;&#x51B5;&#x9009;&#x62E9;&#x662F;&#x5426;&#x91CD;&#x8F7D;&#x7236;&#x7C7B;&#x65B9;&#x6CD5;
-@protocol InterceptorProtocol &lt;NSObject&gt;
-- (void)willBeginAnalyze;
-- (void)didFinishAnalyze;
-@end
+<span class="token comment">//&#x62E6;&#x622A;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#xFF0C;&#x8BE5;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x53EF;&#x9009;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B9E;&#x73B0;&#x60C5;&#x51B5;&#x9009;&#x62E9;&#x662F;&#x5426;&#x91CD;&#x8F7D;&#x7236;&#x7C7B;&#x65B9;&#x6CD5;</span>
+<span class="token keyword">@protocol</span> InterceptorProtocol <span class="token operator">&lt;</span>NSObject<span class="token operator">&gt;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>willBeginAnalyze<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>didFinishAnalyze<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-@interface FileParseTool : NSObject
-@property (nonatomic, weak) id&lt;FileParseProtocol&gt; assistant;
-@property (nonatomic, weak) id&lt;InterceptorProtocol&gt; interceptor;
-- (void)parse;
-@end
+<span class="token keyword">@interface</span> FileParseTool <span class="token punctuation">:</span> NSObject
+<span class="token keyword">@property</span> <span class="token punctuation">(</span>nonatomic<span class="token punctuation">,</span> weak<span class="token punctuation">)</span> id<span class="token operator">&lt;</span>FileParseProtocol<span class="token operator">&gt;</span> assistant<span class="token punctuation">;</span>
+<span class="token keyword">@property</span> <span class="token punctuation">(</span>nonatomic<span class="token punctuation">,</span> weak<span class="token punctuation">)</span> id<span class="token operator">&lt;</span>InterceptorProtocol<span class="token operator">&gt;</span> interceptor<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>parse<span class="token punctuation">;</span>
+<span class="token keyword">@end</span>
 
-//  FileParseToolt.m
-@implementation FileParseTool
-- (void)parse {
-    [self.assistant readFile];
-    if ([self.interceptor respondsToSelector:@selector(willBeginAnalyze)]) {
-        [self.interceptor willBeginAnalyze];
-    }
-    [self.assistant analyze];
-    if ([self.interceptor respondsToSelector:@selector(didFinishAnalyze)]) {
-        [self.interceptor didFinishAnalyze];
-    }
-}
-@end
+<span class="token comment">//  FileParseToolt.m</span>
+<span class="token keyword">@implementation</span> FileParseTool
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>parse <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>assistant readFile<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>interceptor respondsToSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>willBeginAnalyze<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>interceptor willBeginAnalyze<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>assistant analyze<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>interceptor respondsToSelector<span class="token punctuation">:</span><span class="token keyword">@selector</span><span class="token punctuation">(</span>didFinishAnalyze<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token keyword">self</span><span class="token punctuation">.</span>interceptor didFinishAnalyze<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
-<pre><code class="lang-objective-c">//  SpecialFileParseTool.h
-@interface SpecialFileParseTool: FileParseTool&lt;FileParseProtocol,InterceptorProtocol&gt;
-@end
+<pre class="language-"><code class="lang-objective-c"><span class="token comment">//  SpecialFileParseTool.h</span>
+<span class="token keyword">@interface</span> SpecialFileParseTool<span class="token punctuation">:</span> FileParseTool<span class="token operator">&lt;</span>FileParseProtocol<span class="token punctuation">,</span>InterceptorProtocol<span class="token operator">&gt;</span>
+<span class="token keyword">@end</span>
 
-//SpecialFileParseTool.m
-@implementation SpecialFileParseTool
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.assistant = self;
-        self.interceptor = self;
-    }
-    return self;
-}
-- (void)analyze {
-    NSLog(@&quot;analyze special  file&quot;);
-}
-- (void)readFile {
-    NSLog(@&quot;read special file&quot;);
-}
-@end
+<span class="token comment">//SpecialFileParseTool.m</span>
+<span class="token keyword">@implementation</span> SpecialFileParseTool
+<span class="token operator">-</span> <span class="token punctuation">(</span>instancetype<span class="token punctuation">)</span>init <span class="token punctuation">{</span>
+    <span class="token keyword">self</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">super</span> init<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>assistant <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>interceptor <span class="token operator">=</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">self</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>analyze <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;analyze special  file&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>readFile <span class="token punctuation">{</span>
+    <span class="token function">NSLog</span><span class="token punctuation">(</span><span class="token string">@&quot;read special file&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@end</span>
 </code></pre>
 <h2 id="&#x4F55;&#x65F6;&#x4F7F;&#x7528;&#x591A;&#x6001;">&#x4F55;&#x65F6;&#x4F7F;&#x7528;&#x591A;&#x6001;</h2>
 <ol>
@@ -622,7 +626,7 @@ BaseApiManager&#x9700;&#x8981;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x53BB;&#x8986;&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"【第二期】iOS技术周报——继承和面向接口编程","level":"1.3","depth":1,"previous":{"title":"【第一期】iOS技术周报——iOS组件化","level":"1.2","depth":1,"path":"【第一期】iOS技术周报——iOS组件化.md","ref":"【第一期】iOS技术周报——iOS组件化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-plus":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"移动研发团队","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS技术周报","language":"zh-hans","output.name":"site","gitbook":"3.2.2","description":"一周学习和分享一个新知识"},"file":{"path":"【第二期】iOS技术周报——继承和面向接口编程.md","mtime":"2019-01-24T02:55:14.377Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-01-24T02:56:11.508Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"【第二期】iOS技术周报——继承和面向接口编程","level":"1.3","depth":1,"previous":{"title":"【第一期】iOS技术周报——iOS组件化","level":"1.2","depth":1,"path":"【第一期】iOS技术周报——iOS组件化.md","ref":"【第一期】iOS技术周报——iOS组件化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","prism","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-darcula.css"],"lang":{"objective-c":"objectivec"}},"search-plus":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"移动研发团队","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS技术周报","language":"zh-hans","output.name":"site","gitbook":"3.2.2","description":"一周学习和分享一个新知识"},"file":{"path":"【第二期】iOS技术周报——继承和面向接口编程.md","mtime":"2019-01-24T02:55:14.377Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-01-24T04:42:41.100Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
