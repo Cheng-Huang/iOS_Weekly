@@ -252,7 +252,7 @@ app上线一段时间之后，UED不知哪根筋搭错了，决定要修改搜�
 #pragma mark - fake methods
 - (void)loadView:(UIViewController *)viewController
 {
-    NSLog(@" loadView");
+    NSLog(@"loadView");
 }
 
 - (void)viewWillAppear:(BOOL)animated viewController:(UIViewController *)viewController
